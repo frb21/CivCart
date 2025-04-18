@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'signup.dart';
+import 'login.dart';
 
 class LandingPage extends StatelessWidget {
   @override
@@ -31,6 +33,13 @@ class _ToggleButtonState extends State<ToggleButton> {
   void _onButtonPressed(int index){
     setState(() {
       _selectedIndex = index;
+      if(index == 0){
+      Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
+      }
+      else if(index == 1){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+      }
+
     });
   }
 
