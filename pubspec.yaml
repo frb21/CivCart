@@ -1,0 +1,35 @@
+name: civ_cart
+description: CivCart is a fun platform where users can add their Filipino candidates
+             for the upcoming Halalan 2025 (Election) as items into their own cart. 
+             Think about like Shoppee and Lazada only that you add and checkout 
+             politicians into your cart.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
+
+# Assets (images, json files, etc.)
+assets:
+  - assets/images/
+  - assets/data/
+
+#Fonts
+fonts:
+  - family: Roboto
+    fonts:
+      - asset: assets/fonts/Roboto-Regular.ttf
+      - asset: assets/fonts/Roboto-Bold.ttf
